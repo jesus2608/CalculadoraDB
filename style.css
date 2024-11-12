@@ -1,0 +1,95 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://www.xtrafondos.com/wallpapers/casa-kame-de-dragon-ball-3963.jpg);
+    background-size: cover; /* Ajusta la imagen para que cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* Tabla de la calculadora */
+table {
+    border-collapse: collapse;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+}
+
+td {
+    padding: 5px;
+}
+
+#cuadro {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    border: 3px solid #ff6600;
+    border-radius: 5px;
+}
+
+/* Botones generales */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Colores de botones */
+button:nth-child(4n+4) { /* Operadores */
+    background-color: #0044cc;
+    color: #fff;
+}
+
+button#igual {
+    background-color: #ff6600;
+    color: #fff;
+    width: 100%; /* Ocupa todo el espacio */
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Botón Limpiar */
+#limpiar {
+    background-color: #ff3333;
+    color: #fff;
+    font-size: 1.2em;
+}
+button:last-child {
+    background-color: #ff3333;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+button:last-child:hover {
+    background-color: #cc0000;
+}
+
+/* Estilo para los botones numéricos */
+button:not(:nth-child(4n+4)):not(#igual):not(:last-child) {
+    background-color: #f7931e; /* Naranja brillante */
+    color: #fff;
+}
+
+button:not(:nth-child(4n+4)):not(#igual):not(:last-child):hover {
+    background-color: #ffa500;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+}
